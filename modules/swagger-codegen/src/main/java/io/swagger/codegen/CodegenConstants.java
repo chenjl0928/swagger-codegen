@@ -10,6 +10,11 @@ public class CodegenConstants {
     public static final String MODEL_PACKAGE = "modelPackage";
     public static final String MODEL_PACKAGE_DESC = "package for generated models";
 
+    // add by chenjl 20160811 end
+    public static final String TEST_PACKAGE = "testPackage";
+    public static final String TEST_PACKAGE_DESC = "package for generated test specs";
+    // add by chenjl 20160811 end
+
     public static final String TEMPLATE_DIR = "templateDir";
 
 

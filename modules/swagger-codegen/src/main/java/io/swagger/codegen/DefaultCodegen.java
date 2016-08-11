@@ -121,6 +121,12 @@ public class DefaultCodegen {
             this.setModelPackage((String) additionalProperties.get(CodegenConstants.MODEL_PACKAGE));
         }
 
+        // add by chenjl 20160811 end
+        if (additionalProperties.containsKey(CodegenConstants.TEST_PACKAGE)) {
+            this.setTestPackage((String) additionalProperties.get(CodegenConstants.TEST_PACKAGE));
+        }
+        // add by chenjl 20160811 end
+
         if (additionalProperties.containsKey(CodegenConstants.API_PACKAGE)) {
             this.setApiPackage((String) additionalProperties.get(CodegenConstants.API_PACKAGE));
         }
@@ -502,6 +508,12 @@ public class DefaultCodegen {
     public void setTemplateDir(String templateDir) {
         this.templateDir = templateDir;
     }
+
+    // add by chenjl 20160811 end
+    public void setTestPackage(String testPackage) {
+        this.testPackage = testPackage;
+    }
+    // add by chenjl 20160811 end
 
     public void setModelPackage(String modelPackage) {
         this.modelPackage = modelPackage;
